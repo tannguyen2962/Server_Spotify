@@ -19,6 +19,7 @@ app.use(useMethodUser);
 app.use(useMethodPlaylist);
 app.use(useMethodLikeSong);
 
-app.listen(4000, (cors) => {
+const PORT = process.env.PORT || 4000;
+app.listen(PORT, (cors) => {
   console.log("server is running");
 });
