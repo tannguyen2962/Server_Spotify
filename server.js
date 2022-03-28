@@ -1,8 +1,9 @@
 const express = require("express");
 const mongoose = require("mongoose");
 
-// const url = "mongodb+srv://tannguyen:tannguyen123@cluster0.bxrvl.mongodb.net/SpotifyDB?retryWrites=true&w=majority"
-const url = "mongodb://localhost:27017/Spotify";
+const url =
+  "mongodb+srv://tannguyen:tannguyen123@cluster0.xv4bw.mongodb.net/Server_Spotify?retryWrites=true&w=majority";
+// const url = "mongodb://localhost:127.0.0.1/Spotify";
 
 const useMethodUser = require("./routes/method_user");
 const useMethodSong = require("./routes/method_song");
