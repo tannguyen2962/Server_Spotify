@@ -15,11 +15,8 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-mongoose.connect(url),
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  };
+mongoose.connect(url);
+
 app.use(useMethodSong);
 app.use(useMethodUser);
 app.use(useMethodPlaylist);
