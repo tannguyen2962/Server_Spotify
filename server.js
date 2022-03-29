@@ -15,6 +15,8 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+// mongoose.connect(url);
+
 mongoose
   .connect(
     "mongodb+srv://tannguyen:tannguyen123@cluster0.xv4bw.mongodb.net/Server_Spotify?retryWrites=true&w=majority",
